@@ -32,7 +32,10 @@ print(" ")
 #Write a function to return if the given year is a leap year.
 def is_leap_year(a_year):
     if int(a_year) % 4 == 0:
-        print(True)
+        if int(a_year) % 400 == 0:
+            print(True)
+        else:
+            print(False)
     else:
         print(False)
 is_leap_year(input("This is a leap year? "))
